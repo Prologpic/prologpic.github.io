@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  padding-top: 0px;
+}
+
+.logo-header {
+  text-align: center;
+}
+
+.logo-image {
+  max-width: 250px;
+  height: auto;
+  margin-bottom: -80px;
+  margin-top: -80px;
+}
+
+.booking-instruction {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.booking-instruction h2 {
+  font-size: 24px;
+  color: #0052cc;
+  font-weight: bold;
+}
+
+.booking-title {
+  background-color: #0052cc;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  display: inline-block;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.booking-steps {
+  border: 2px solid #0052cc;
+  border-radius: 15px;
+  padding: 20px;
+  color: #0052cc;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.booking-steps ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.wrapper {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* ✅ Ini memberikan jarak antar card */
+  margin: 0 auto;
+  
+}
+
+/* Setiap Card */
+.card-pro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px; /* ✅ Alternatif jika tidak pakai gap */
+}
+
+/* Foto */
+.photo-section {
+  border: 2px solid #0052cc;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: auto;
+  width: 100%;
+
+}
+
+.photo-header {
+  background-color: #0052cc;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.photo-image {
+  width: 100%;
+  height: 500px; /* ✅ Ubah tinggi sesuai kebutuhan */
+  object-fit: cover; /* ✅ Menyesuaikan isi tanpa merusak proporsi */
+  display: block;
+}
+
+/* Info */
+.info-section {
+  border: 2px solid #0052cc;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.sub-card {
+  background-color: #0052cc;
+  color: white;
+  padding: 10px 15px; /* kecilkan padding */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 14px;
+
+  line-height: 1.2; /* rapatkan antar baris */
+}
+
+.sub-card-header {
+  background-color: #0052cc;
+  color: white;
+  padding: 10px 15px; /* kecilkan padding */
+  
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 14px;
+
+  line-height: 1.2; /* rapatkan antar baris */
+}
+
+.sub-card p {
+  margin: 4px 0; /* kecilkan jarak antar paragraf */
+}
+
+.sub-card small {
+  font-size: 11px;
+}
+
+.sub-card hr {
+  border: none;
+  border-top: 2px solid #ffffff;
+  margin: 6px 0; /* kecilkan jarak garis pemisah */
+}
+
+
+.info-section p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 55px;
+  color: #0052cc;
+  font-weight: bold;
+}
+
+.price-wrapper {
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  text-align: center;
+}
+
+/* Tombol */
+.button-section {
+  text-align: center;
+}
+
+.book-button {
+  background-color: #0052cc;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.book-button:hover {
+  background-color: #003f99;
+}
+
+/* FOOTER SECTION */
+.footer-section {
+  background-color: #fff;
+  color: #0052cc;
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.info-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #0052cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  max-width: 400px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+  margin-top: 12px;
+}
+
+.info-button:hover {
+  background-color: #003f99;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+}
+
+
+.info-card {
+  display: flex;
+  align-items: center;
+  background-color: #0052cc;
+  color: white;
+  border-radius: 20px;
+  padding: 15px 20px;
+  max-width: 400px;
+  width: 100%;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 28px;
+}
+
+.info-text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 2px solid #0052cc;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row; /* ✅ Ubah ke horizontal */
+  justify-content: space-between; /* ✅ Spasi antar elemen */
+  align-items: center;
+  gap: 10px;
+  margin-top: -40px;
+  width: 100%;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer-socials img {
+  width: 45px;
+  height: 45px;
+}
+
+
