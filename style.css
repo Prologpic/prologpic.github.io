@@ -1,260 +1,418 @@
+/* ============================================================
+   PROLOG SELF PHOTO — Modern Brand-Blue Theme
+   ============================================================
+   Design system: all brand values live in :root so the whole
+   theme can be tuned in one place.
+   ============================================================ */
+
+:root {
+  /* Brand palette (anchor: original #0052cc) */
+  --brand-900: #002e73;
+  --brand-700: #003f99;
+  --brand-600: #0052cc;   /* primary */
+  --brand-500: #2b7bff;   /* gradient accent */
+  --brand-100: #eaf2ff;   /* soft tint */
+  --brand-50:  #f4f8ff;   /* faint tint */
+
+  /* Neutrals */
+  --ink:    #0b1b33;
+  --body:   #33415c;
+  --muted:  #4d5b72;
+  --surface:        #ffffff;
+  --surface-muted:  #f7faff;
+  --border: #d9e6ff;
+
+  /* Gradients */
+  --gradient: linear-gradient(135deg, var(--brand-600), var(--brand-500));
+
+  /* Radii */
+  --radius-sm:  10px;
+  --radius:     18px;
+  --radius-lg:  24px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm:   0 2px 8px rgba(11, 27, 51, 0.06);
+  --shadow-md:   0 10px 30px rgba(11, 27, 51, 0.10);
+  --shadow-lg:   0 18px 44px rgba(11, 27, 51, 0.16);
+  --shadow-blue: 0 10px 24px rgba(0, 82, 204, 0.28);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Type */
+  --font-body:    'Poppins', Arial, sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --type-xl: 28px;
+  --type-lg: 20px;
+  --type-md: 16px;
+  --type-sm: 14px;
+  --type-xs: 12px;
+
+  /* Align Bootstrap's body tokens with the theme
+     (Bootstrap loads after style.css, so its var-driven
+     body bg/color would otherwise win) */
+  --bs-body-bg: var(--surface-muted);
+  --bs-body-color: var(--body);
+  --bs-body-font-family: var(--font-body);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #ffffff;
+  font-family: var(--font-body);
+  color: var(--body);
+  background-color: var(--surface-muted);
   display: flex;
   justify-content: center;
-  padding: 30px;
-  padding-top: 0px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Single-column, phone-first canvas */
+.wrapper {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  margin: 0 auto;
+  padding: 0 var(--space-4) var(--space-7);
+}
+
+/* ------------------------------------------------
+   HEADER — blue gradient band, white logo
+   ------------------------------------------------ */
+.sub-card-header {
+  background: var(--gradient);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  padding: var(--space-6) var(--space-4) var(--space-5);
+  text-align: center;
+  box-shadow: var(--shadow-blue);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative soft glow in the corner */
+.sub-card-header::before {
+  content: "";
+  position: absolute;
+  top: -70%;
+  right: -25%;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.10);
+  pointer-events: none;
 }
 
 .logo-header {
-  text-align: center;
+  position: relative;
 }
 
 .logo-image {
-  max-width: 250px;
+  max-width: 200px;
   height: auto;
-  margin-bottom: -80px;
-  margin-top: -80px;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.18));
 }
 
+/* ------------------------------------------------
+   BOOKING INSTRUCTIONS
+   ------------------------------------------------ */
 .booking-instruction {
   text-align: center;
-  margin: 30px auto;
-  max-width: 800px;
-  padding: 0 20px;
+  margin: var(--space-2) auto 0;
+  max-width: 560px;
 }
 
 .booking-instruction h2 {
-  font-size: 24px;
-  color: #0052cc;
+  font-family: var(--font-heading);
+  font-size: var(--type-lg);
+  color: var(--ink);
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .booking-title {
-  background-color: #0052cc;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 30px;
+  background: var(--gradient);
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--type-md);
+  font-family: var(--font-heading);
+  border-radius: var(--radius-pill);
   padding: 10px 30px;
   display: inline-block;
-  margin: 20px 0;
+  margin: var(--space-4) 0;
   width: 100%;
+  box-shadow: var(--shadow-blue);
 }
 
 .booking-steps {
-  border: 2px solid #0052cc;
-  border-radius: 15px;
-  padding: 20px;
-  color: #0052cc;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-5);
+  color: var(--body);
   text-align: left;
-  font-size: 14px;
+  font-size: var(--type-sm);
   line-height: 1.6;
 }
 
 .booking-steps ol {
-  padding-left: 20px;
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
   margin: 0;
-}
-
-.wrapper {
-  width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 30px; /* ✅ Ini memberikan jarak antar card */
-  margin: 0 auto;
-  
+  gap: var(--space-4);
 }
 
-.coming-soon {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f5f5f5;
-    border-radius: 10px;
+/* Numbered chips via CSS counter (keeps <ol> semantic) */
+.booking-steps li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 44px;
 }
 
-.coming-soon h2 {
-    font-size: 32px;
-    font-weight: 600;
-    color: #555;
-    letter-spacing: 2px;
+.booking-steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-100);
+  color: var(--brand-600);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: var(--type-sm);
+  border-radius: 50%;
 }
 
-/* Setiap Card */
+/* ------------------------------------------------
+   CONCEPT CARDS
+   ------------------------------------------------ */
 .card-pro {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 30px; /* ✅ Alternatif jika tidak pakai gap */
+  gap: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-pro:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 /* Foto */
 .photo-section {
-  border: 2px solid #0052cc;
-  border-radius: 20px;
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin: auto;
-  width: 100%;
-
+  background: var(--brand-50);
 }
 
+/* Concept label overlays the photo (top-left chip) */
 .photo-header {
-  background-color: #0052cc;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 18px;
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-4);
+  z-index: 5;
+  background: rgba(11, 27, 51, 0.8);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  padding: 8px 18px;
+  font-size: var(--type-md);
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.5px;
+  font-family: var(--font-heading);
+  letter-spacing: 0.3px;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-sm);
 }
 
 .photo-image {
   width: 100%;
-  height: 500px; /* ✅ Ubah tinggi sesuai kebutuhan */
-  object-fit: cover; /* ✅ Menyesuaikan isi tanpa merusak proporsi */
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
   display: block;
+}
+
+/* Carousel control chips */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(11, 27, 51, 0.35);
+  background-size: 60% 60%;
+  border-radius: 50%;
 }
 
 /* Info */
 .info-section {
-  border: 2px solid #0052cc;
-  border-radius: 25px;
-  overflow: hidden;
-  width: 100%;
-
-  margin: auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 0 var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
 }
 
 .sub-card {
-  background-color: #0052cc;
-  color: white;
-  padding: 10px 15px; /* kecilkan padding */
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  font-size: 14px;
-
-  line-height: 1.2; /* rapatkan antar baris */
-}
-
-.sub-card-header {
-  background-color: #0052cc;
-  color: white;
-  padding: 10px 15px; /* kecilkan padding */
-  
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  font-size: 14px;
-
-  line-height: 1.2; /* rapatkan antar baris */
+  background: var(--brand-50);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  font-size: var(--type-sm);
+  line-height: 1.5;
 }
 
 .sub-card p {
-  margin: 4px 0; /* kecilkan jarak antar paragraf */
+  margin: var(--space-2) 0;
+}
+
+.sub-card strong {
+  color: var(--brand-600);
 }
 
 .sub-card small {
-  font-size: 11px;
+  font-size: var(--type-xs);
+  color: var(--muted);
 }
 
 .sub-card hr {
   border: none;
-  border-top: 2px solid #ffffff;
-  margin: 6px 0; /* kecilkan jarak garis pemisah */
+  border-top: 1px solid var(--border);
+  margin: var(--space-2) 0;
 }
 
-
-.info-section p {
-  margin-bottom: 10px;
-  font-size: 14px;
+/* Harga */
+.price-wrapper {
+  text-align: center;
+  padding: var(--space-2) 0 var(--space-4);
 }
 
 .price {
-  font-size: 55px;
-  color: #0052cc;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  letter-spacing: -0.5px;
+  line-height: 1;
+  color: var(--brand-600);
 }
 
-.price-wrapper {
-  background-color: white;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-
-  text-align: center;
+/* Gradient price where supported */
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .price {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
-/* Tombol */
+/* ------------------------------------------------
+   BOOK BUTTON
+   ------------------------------------------------ */
 .button-section {
   text-align: center;
+  padding: 0 var(--space-5) var(--space-5);
 }
 
 .book-button {
-  background-color: #0052cc;
-  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background: var(--gradient);
+  color: #fff;
   padding: 15px;
-  font-size: 18px;
+  font-size: var(--type-md);
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-heading);
   letter-spacing: 0.5px;
   border: none;
-  border-radius: 30px;
+  border-radius: var(--radius-pill);
   cursor: pointer;
-  width: 100%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow-blue);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .book-button:hover {
-  background-color: #003f99;
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 14px 30px rgba(0, 82, 204, 0.36);
 }
 
-/* FOOTER SECTION */
+.book-button:active {
+  transform: translateY(0);
+}
+
+/* ------------------------------------------------
+   FOOTER
+   ------------------------------------------------ */
 .footer-section {
-  background-color: #fff;
-  color: #0052cc;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  color: var(--body);
   text-align: center;
-  padding: 40px 20px;
+  padding: var(--space-6) var(--space-5);
   width: 100%;
-  display: block;
   box-sizing: border-box;
+  margin-top: var(--space-2);
+}
+
+.info-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
 }
 
 .info-button {
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: #0052cc;
-  color: white;
+  background: var(--brand-50);
+  border: 1px solid var(--border);
+  color: var(--ink);
   text-decoration: none;
-  border-radius: 20px;
-  padding: 15px 20px;
+  border-radius: var(--radius);
+  padding: 14px 20px;
   max-width: 400px;
   width: 100%;
-  font-size: 16px;
+  font-size: var(--type-md);
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: background-color 0.3s;
-  margin-top: 12px;
+  font-family: var(--font-heading);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .info-button:hover {
-  background-color: #003f99;
+  transform: translateY(-2px);
+  background: var(--brand-100);
+  box-shadow: var(--shadow-md);
 }
 
 .info-icon {
@@ -262,65 +420,88 @@ body {
   height: 50px;
 }
 
-
-.info-card {
-  display: flex;
-  align-items: center;
-  background-color: #0052cc;
-  color: white;
-  border-radius: 20px;
-  padding: 15px 20px;
-  max-width: 400px;
-  width: 100%;
-  gap: 15px;
-}
-
-.icon {
-  font-size: 28px;
-}
-
 .info-text {
   text-align: left;
-  font-size: 14px;
+  font-size: var(--type-sm);
   line-height: 1.4;
+  color: var(--body);
+}
+
+.info-text strong {
+  color: var(--ink);
 }
 
 .footer-divider {
   border: none;
-  border-top: 2px solid #0052cc;
-  width: 100%;
-  margin: 20px auto;
+  border-top: 1px solid var(--border);
+  margin: var(--space-5) 0;
 }
 
 .footer-bottom {
   display: flex;
-  flex-direction: row; /* ✅ Ubah ke horizontal */
-  justify-content: space-between; /* ✅ Spasi antar elemen */
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-top: -40px;
+  margin-top: var(--space-4);
   width: 100%;
 }
 
-.footer-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .footer-logo img {
-  width: 150px;
+  width: 130px;
 }
 
 .footer-socials {
   display: flex;
-  gap: 15px;
-  margin-top: 10px;
+  gap: 12px;
 }
 
 .footer-socials img {
   width: 45px;
   height: 45px;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
+.footer-socials a:hover img {
+  transform: scale(1.12);
+}
 
+/* ------------------------------------------------
+   ACCESSIBILITY & MOTION
+   ------------------------------------------------ */
+:focus-visible {
+  outline: 3px solid var(--brand-500);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ------------------------------------------------
+   RESPONSIVE POLISH
+   ------------------------------------------------ */
+@media (max-width: 360px) {
+  .wrapper {
+    padding: 0 var(--space-3) var(--space-6);
+  }
+
+  .price {
+    font-size: 44px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .logo-image {
+    max-width: 160px;
+  }
+}
