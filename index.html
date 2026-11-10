@@ -1,461 +1,788 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Studio self photo di Puruk Cahu. Pilih konsep, atur jadwal, dan abadikan momen dengan konsep Self Photo, Thematic, Spot Light, Years Book, Theater, dan Retro." />
+    <meta
+      name="description"
+      content="Studio self photo di Puruk Cahu. Pilih konsep, atur jadwal, dan abadikan momen dengan konsep Self Photo, Thematic, Spot Light, Years Book, Theater, dan Retro."
+    />
     <title>Prolog Self Photo</title>
     <!-- Google Fonts: Poppins (body) + Montserrat (heading) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom theme — loaded after Bootstrap so it wins the cascade -->
     <link rel="stylesheet" href="style.css" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="64x64" href="Prolog.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="Prolog.png" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <main class="wrapper">
+      <div class="sub-card-header">
+        <div class="logo-header">
+          <img src="Prolog putih.png" alt="Logo" class="logo-image" />
+        </div>
+      </div>
 
-        <div class="sub-card-header">
-            <div class="logo-header">
-                <img src="Prolog putih.png" alt="Logo" class="logo-image">
+      <div class="booking-instruction">
+        <h2>Capture Your Own Moments✨</h2>
+        <div class="booking-title">Cara Booking</div>
+        <div class="booking-steps">
+          <ol>
+            <li>Pilih konsep foto dan klik booking</li>
+            <li>Pilih tanggal dan jam sesi foto</li>
+            <li>Isi data diri dan klik konfirmasi pemesanan</li>
+            <li>
+              Setelah formulir dikirimkan, kami akan segera menghubungi Anda
+              melalui WhatsApp untuk konfirmasi dan petunjuk lebih lanjut
+              tentang pembayaran sesi
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- CARD 1 -->
+      <div class="card-pro">
+        <div class="photo-section">
+          <div class="photo-header">Self Photo</div>
+
+          <div
+            id="photoCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="asset/self/30.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/self/31.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/self/32.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/self/34.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 4"
+                />
+              </div>
             </div>
-
+            <button
+              class="carousel-control-prev"
+              type="button"
+              aria-label="Previous"
+              data-bs-target="#photoCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              aria-label="Next"
+              data-bs-target="#photoCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
         </div>
 
+        <div class="info-section">
+          <!-- Sub-card sebagai bagian atas -->
+          <div class="sub-card">
+            <p>
+              <strong>2 Orang</strong><br />
+              <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
+            </p>
+            <hr />
+            <p>20 menit sesi</p>
+            <hr />
+            <p>Gratis semua soft file</p>
+          </div>
 
-        <div class="booking-instruction">
-            <h2>Capture Your Own Moments✨</h2>
-            <div class="booking-title">Cara Booking</div>
-            <div class="booking-steps">
-                <ol>
-                    <li>Pilih konsep foto dan klik booking</li>
-                    <li>Pilih tanggal dan jam sesi foto</li>
-                    <li>Isi data diri dan klik konfirmasi pemesanan</li>
-                    <li>
-                        Setelah formulir dikirimkan, kami akan segera menghubungi Anda melalui WhatsApp untuk konfirmasi
-                        dan petunjuk lebih lanjut tentang pembayaran sesi
-                    </li>
-                </ol>
-            </div>
+          <!-- Harga -->
+          <div class="price-wrapper">
+            <div class="price">75K</div>
+          </div>
         </div>
 
-        <!-- CARD 1 -->
-        <div class="card-pro">
-            <div class="photo-section">
-                <div class="photo-header">Self Photo</div>
+        <div class="button-section">
+          <a
+            href="https://prologselfphotostudio.youcanbook.me/"
+            target="_blank"
+            class="book-button"
+            >Book Now</a
+          >
+        </div>
+      </div>
 
-                <div id="photoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="asset/self/30.png" class="d-block w-100 photo-image" alt="Foto 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/self/31.png" class="d-block w-100 photo-image" alt="Foto 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/self/32.png" class="d-block w-100 photo-image" alt="Foto 3">
-                        </div>    
-                        <div class="carousel-item">
-                            <img src="asset/self/34.png" class="d-block w-100 photo-image" alt="Foto 4">
-                        </div>
+      <!-- CARD 2 -->
+      <div class="card-pro">
+        <div class="photo-section">
+          <div class="photo-header">Profile Photo</div>
 
-                    </div>
-                    <button class="carousel-control-prev" type="button" aria-label="Previous" data-bs-target="#photoCarousel"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" aria-label="Next" data-bs-target="#photoCarousel"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
+          <div
+            id="photoCarouselThematic"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="asset/Thematic/1.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/2.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/3.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/4.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 4"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/5.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 5"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/6.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 6"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/7.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 7"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/8.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 8"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/9.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 9"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/10.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 10"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/11.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 11"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/12.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 12"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/13.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 13"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Thematic/14.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Thematic Foto 14"
+                />
+              </div>
             </div>
-
-
-            <div class="info-section">
-                <!-- Sub-card sebagai bagian atas -->
-                <div class="sub-card">
-                    <p><strong>2 Orang</strong><br />
-                        <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
-                    </p>
-                    <hr />
-                    <p>20 menit sesi</p>
-                    <hr />
-                    <p>Gratis semua soft file</p>
-                </div>
-
-                <!-- Harga -->
-                <div class="price-wrapper">
-                    <div class="price">75K</div>
-                </div>
-            </div>
-
-
-            <div class="button-section">
-                <a href="https://prologselfphotostudio.youcanbook.me/" target="_blank" class="book-button">Book Now</a>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              aria-label="Previous"
+              data-bs-target="#photoCarouselThematic"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              aria-label="Next"
+              data-bs-target="#photoCarouselThematic"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
         </div>
 
-        <!-- CARD 2 -->
-        <div class="card-pro">
-            <div class="photo-section">
-                <div class="photo-header">Profile Photo</div>
+        <div class="info-section">
+          <!-- Sub-card sebagai bagian atas -->
+          <div class="sub-card">
+            <p>
+              <strong>2 Orang</strong><br />
+              <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
+            </p>
+            <hr />
+            <p>20 menit sesi</p>
+            <hr />
+            <p>Gratis semua soft file</p>
+          </div>
 
-                <div id="photoCarouselThematic" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="asset/Thematic/1.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/2.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/3.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 3">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/4.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 4">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/5.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 5">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/6.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 6">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/7.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 7">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/8.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 8">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/9.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 9">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/10.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 10">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/11.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 11">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/12.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 12">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/13.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 13">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Thematic/14.jpeg" class="d-block w-100 photo-image" alt="Thematic Foto 14">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" aria-label="Previous" data-bs-target="#photoCarouselThematic"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" aria-label="Next" data-bs-target="#photoCarouselThematic"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="info-section">
-                <!-- Sub-card sebagai bagian atas -->
-                <div class="sub-card">
-                    <p><strong>2 Orang</strong><br />
-                        <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
-                    </p>
-                    <hr />
-                    <p>20 menit sesi</p>
-                    <hr />
-                    <p>Gratis semua soft file</p>
-                </div>
-
-                <!-- Harga -->
-                <div class="price-wrapper">
-                    <div class="price">75K</div>
-                </div>
-            </div>
-
-
-            <div class="button-section">
-                <a href="https://prologselfphotostudio.youcanbook.me" target="_blank" class="book-button">Book Now</a>
-            </div>
+          <!-- Harga -->
+          <div class="price-wrapper">
+            <div class="price">75K</div>
+          </div>
         </div>
 
-        <!-- CARD 1 -->
-        <div class="card-pro">
-            <div class="photo-section">
-                <div class="photo-header">Spot Light</div>
+        <div class="button-section">
+          <a
+            href="https://calendly.com/prologpicwidebox/30min?month=2025-09&fbclid=PARlRTSAMuBClleHRuA2FlbQIxMAABp-pAsVrVXvkNjFVv3vZpXoJV_gAhIIdtyPlRtCLJF9_DIcOHTisMfLeltxRO_aem_Blo-9xgVAY56QaK2tH__Mw"
+            target="_blank"
+            class="book-button"
+            >Book Now</a
+          >
+        </div>
+      </div>
 
-                <div id="photoCarousel3" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="asset/Spotlight/45.png" class="d-block w-100 photo-image" alt="Foto 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Spotlight/46.png" class="d-block w-100 photo-image" alt="Foto 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Spotlight/47.png" class="d-block w-100 photo-image" alt="Foto 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" aria-label="Previous" data-bs-target="#photoCarousel3"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" aria-label="Next" data-bs-target="#photoCarousel3"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
+      <!-- CARD 1 -->
+      <div class="card-pro">
+        <div class="photo-section">
+          <div class="photo-header">Spot Light</div>
+
+          <div
+            id="photoCarousel3"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="asset/Spotlight/45.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Spotlight/46.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Spotlight/47.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 3"
+                />
+              </div>
             </div>
-
-
-            <div class="info-section">
-                <!-- Sub-card sebagai bagian atas -->
-                <div class="sub-card">
-                    <p><strong>2 Orang</strong><br />
-                        <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
-                    </p>
-                    <hr />
-                    <p>20 menit sesi</p>
-                    <hr />
-                    <p>Gratis semua soft file</p>
-                </div>
-
-                <!-- Harga -->
-                <div class="price-wrapper">
-                    <div class="price">75K</div>
-                </div>
-            </div>
-
-
-            <div class="button-section">
-                <a href="https://prologselfphotostudio.youcanbook.me/" target="_blank" class="book-button">Book Now</a>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              aria-label="Previous"
+              data-bs-target="#photoCarousel3"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              aria-label="Next"
+              data-bs-target="#photoCarousel3"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
         </div>
 
-        <!-- CARD 2 -->
-        <div class="card-pro">
-            <div class="photo-section">
-                <div class="photo-header">Years Book</div>
+        <div class="info-section">
+          <!-- Sub-card sebagai bagian atas -->
+          <div class="sub-card">
+            <p>
+              <strong>2 Orang</strong><br />
+              <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
+            </p>
+            <hr />
+            <p>20 menit sesi</p>
+            <hr />
+            <p>Gratis semua soft file</p>
+          </div>
 
-                <div id="photoCarousel4" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="asset/Yearbook/36.png" class="d-block w-100 photo-image" alt="Foto 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Yearbook/37.png" class="d-block w-100 photo-image" alt="Foto 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Yearbook/38.png" class="d-block w-100 photo-image" alt="Foto 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" aria-label="Previous" data-bs-target="#photoCarousel4"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" aria-label="Next" data-bs-target="#photoCarousel4"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="info-section">
-                <!-- Sub-card sebagai bagian atas -->
-                <div class="sub-card">
-                    <p><strong>2 Orang</strong><br />
-                        <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
-                    </p>
-                    <hr />
-                    <p>20 menit sesi</p>
-                    <hr />
-                    <p>Gratis semua soft file</p>
-                </div>
-
-                <!-- Harga -->
-                <div class="price-wrapper">
-                    <div class="price">75K</div>
-                </div>
-            </div>
-
-
-            <div class="button-section">
-                <a href="https://prologselfphotostudio.youcanbook.me/" target="_blank" class="book-button">Book Now</a>
-            </div>
-        </div>
-        
-        <!-- CARD 3 -->
-        <div class="card-pro">
-            <div class="photo-section">
-                <div class="photo-header">Theater Concept</div>
-
-                <div id="photoCarousel5" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="asset/Theater/42.png" class="d-block w-100 photo-image" alt="Foto 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Theater/43.png" class="d-block w-100 photo-image" alt="Foto 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Theater/44.png" class="d-block w-100 photo-image" alt="Foto 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" aria-label="Previous" data-bs-target="#photoCarousel5"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" aria-label="Next" data-bs-target="#photoCarousel5"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-            </div>
-
-
-            <div class="info-section">
-                <!-- Sub-card sebagai bagian atas -->
-                <div class="sub-card">
-                    <p><strong>2 Orang</strong><br />
-                        <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
-                    </p>
-                    <hr />
-                    <p>20 menit sesi</p>
-                    <hr />
-                    <p>Gratis semua soft file</p>
-                </div>
-
-                <!-- Harga -->
-                <div class="price-wrapper">
-                    <div class="price">75K</div>
-                </div>
-            </div>
-
-
-            <div class="button-section">
-                <a href="https://prologselfphotostudio.youcanbook.me/" target="_blank" class="book-button">Book Now</a>
-            </div>
+          <!-- Harga -->
+          <div class="price-wrapper">
+            <div class="price">75K</div>
+          </div>
         </div>
 
-        <!-- CARD Retro -->
-        <div class="card-pro">
-            <div class="photo-section">
-                <div class="photo-header">Retro Concept</div>
+        <div class="button-section">
+          <a
+            href="https://prologselfphotostudio.youcanbook.me/"
+            target="_blank"
+            class="book-button"
+            >Book Now</a
+          >
+        </div>
+      </div>
 
-                <div id="photoCarousel6" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="asset/Retro/R1.jpeg" class="d-block w-100 photo-image" alt="Foto 1">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Retro/R1.jpeg" class="d-block w-100 photo-image" alt="Foto 2">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="asset/Retro/R1.jpeg" class="d-block w-100 photo-image" alt="Foto 3">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" aria-label="Previous" data-bs-target="#photoCarousel6"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" aria-label="Next" data-bs-target="#photoCarousel6"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
+      <!-- CARD 2 -->
+      <div class="card-pro">
+        <div class="photo-section">
+          <div class="photo-header">Years Book</div>
+
+          <div
+            id="photoCarousel4"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="asset/Yearbook/36.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Yearbook/37.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Yearbook/38.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 3"
+                />
+              </div>
             </div>
-
-
-            <div class="info-section">
-                <!-- Sub-card sebagai bagian atas -->
-                <div class="sub-card">
-                    <p><strong>2 Orang</strong><br />
-                        <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
-                    </p>
-                    <hr />
-                    <p>20 menit sesi</p>
-                    <hr />
-                    <p>Gratis semua soft file</p>
-                </div>
-
-                <!-- Harga -->
-                <div class="price-wrapper">
-                    <div class="price">75K</div>
-                </div>
-            </div>
-
-
-            <div class="button-section">
-                <a href="https://calendly.com/prologpicwidebox/30min?month=2026-01" target="_blank" class="book-button">Book Now</a>
-            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              aria-label="Previous"
+              data-bs-target="#photoCarousel4"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              aria-label="Next"
+              data-bs-target="#photoCarousel4"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
         </div>
 
+        <div class="info-section">
+          <!-- Sub-card sebagai bagian atas -->
+          <div class="sub-card">
+            <p>
+              <strong>2 Orang</strong><br />
+              <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
+            </p>
+            <hr />
+            <p>20 menit sesi</p>
+            <hr />
+            <p>Gratis semua soft file</p>
+          </div>
 
-        <!-- Footer (dalam wrapper) -->
-        <footer class="footer-section">
-            <!-- Lokasi & Customer Service -->
-            <div class="info-buttons">
-                <a href="https://maps.app.goo.gl/x5BtnJBmPja2mN9B8" class="info-button"
-                    target="_blank">
-                    <img src="asset/location-512.png" alt="Lokasi" class="info-icon">
-                    <div class="info-text">
-                        <strong>Lokasi</strong><br>
-                        <small>Jl. A. Yani Ruko Alva Media LT 2<br>
-                            Sebrang Masjid Al-kausar, Puruk Cahu</small>
-                    </div>
-                </a>
+          <!-- Harga -->
+          <div class="price-wrapper">
+            <div class="price">75K</div>
+          </div>
+        </div>
 
+        <div class="button-section">
+          <a
+            href="https://prologselfphotostudio.youcanbook.me/"
+            target="_blank"
+            class="book-button"
+            >Book Now</a
+          >
+        </div>
+      </div>
 
-                <a href="https://wa.me/6285190644084" class="info-button" target="_blank">
-                    <img src="asset/whatsapp-512.png" alt="WhatsApp" class="info-icon">
-                    <span><strong>Customer Service</strong></span>
-                </a>
+      <!-- CARD 3 -->
+      <div class="card-pro">
+        <div class="photo-section">
+          <div class="photo-header">Theater Concept</div>
 
+          <div
+            id="photoCarousel5"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="asset/Theater/42.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Theater/43.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Theater/44.png"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 3"
+                />
+              </div>
             </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              aria-label="Previous"
+              data-bs-target="#photoCarousel5"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              aria-label="Next"
+              data-bs-target="#photoCarousel5"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
 
-            <!-- Garis -->
-            <hr class="footer-divider">
+        <div class="info-section">
+          <!-- Sub-card sebagai bagian atas -->
+          <div class="sub-card">
+            <p>
+              <strong>2 Orang</strong><br />
+              <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
+            </p>
+            <hr />
+            <p>20 menit sesi</p>
+            <hr />
+            <p>Gratis semua soft file</p>
+          </div>
 
-            <!-- Logo & Media Sosial -->
-            <div class="footer-bottom">
-                <div class="footer-logo">
-                    <img src="Prolog.png" alt="Prolog Logo">
-                </div>
-                <div class="footer-socials">
-                    <a href="https://www.instagram.com/prolog.pic/" target="_blank"><img src="asset/instagram.png" alt="Instagram"></a>
-                    <a href="https://www.tiktok.com/@prolog.pic?_t=ZS-8xf0lhzbSq2&_r=1" target="_blank"><img src="asset/tiktok.png" alt="TikTok"></a>
-                </div>
+          <!-- Harga -->
+          <div class="price-wrapper">
+            <div class="price">75K</div>
+          </div>
+        </div>
+
+        <div class="button-section">
+          <a
+            href="https://prologselfphotostudio.youcanbook.me/"
+            target="_blank"
+            class="book-button"
+            >Book Now</a
+          >
+        </div>
+      </div>
+
+      <!-- CARD Retro -->
+      <div class="card-pro">
+        <div class="photo-section">
+          <div class="photo-header">Retro Concept</div>
+
+          <div
+            id="photoCarousel6"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="asset/Retro/R1.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Retro/R1.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Retro/R1.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 3"
+                />
+              </div>
             </div>
-        </footer>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              aria-label="Previous"
+              data-bs-target="#photoCarousel6"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              aria-label="Next"
+              data-bs-target="#photoCarousel6"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
 
+        <div class="info-section">
+          <!-- Sub-card sebagai bagian atas -->
+          <div class="sub-card">
+            <p>
+              <strong>2 Orang</strong><br />
+              <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
+            </p>
+            <hr />
+            <p>20 menit sesi</p>
+            <hr />
+            <p>Gratis semua soft file</p>
+          </div>
+
+          <!-- Harga -->
+          <div class="price-wrapper">
+            <div class="price">75K</div>
+          </div>
+        </div>
+
+        <div class="button-section">
+          <a
+            href="https://calendly.com/prologpicwidebox/30min?month=2026-01"
+            target="_blank"
+            class="book-button"
+            >Book Now</a
+          >
+        </div>
+      </div>
+
+      <!-- CARD RED CORRIDOR -->
+      <div class="card-pro">
+        <div class="photo-section">
+          <div class="photo-header">RED CORRIDOR</div>
+
+          <div
+            id="photoCarousel6"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="asset/Red/RC1.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Red/RC1.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="asset/Red/RC1.jpeg"
+                  class="d-block w-100 photo-image"
+                  alt="Foto 3"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              aria-label="Previous"
+              data-bs-target="#photoCarousel6"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              aria-label="Next"
+              data-bs-target="#photoCarousel6"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <!-- Sub-card sebagai bagian atas -->
+          <div class="sub-card">
+            <p>
+              <strong>2 Orang</strong><br />
+              <small>(Tambahan orang dikenakan biaya 20K/orang)</small>
+            </p>
+            <hr />
+            <p>20 menit sesi</p>
+            <hr />
+            <p>Gratis semua soft file</p>
+          </div>
+
+          <!-- Harga -->
+          <div class="price-wrapper">
+            <div class="price">75K</div>
+          </div>
+        </div>
+
+        <div class="button-section">
+          <a
+            href="https://calendly.com/prologpicwidebox/30min?month=2026-11&fbclid=PARlRTSAVcAuBleHRuA2FlbQIxMQBwZG9mAmZkaWQWURwAuNpfI67SyUM9L9y_05ePZx7_znNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp37e5Cu0vAhko5qittN1xkHSNS2xVZZEeV6YIPBqYaeZjbfNCGXGXyq0nvio_aem_JxHxvkowRwUyXNfU0h4dfw"
+            target="_blank"
+            class="book-button"
+            >Book Now</a
+          >
+        </div>
+      </div>
+
+      <!-- Footer (dalam wrapper) -->
+      <footer class="footer-section">
+        <!-- Lokasi & Customer Service -->
+        <div class="info-buttons">
+          <a
+            href="https://maps.app.goo.gl/x5BtnJBmPja2mN9B8"
+            class="info-button"
+            target="_blank"
+          >
+            <img src="asset/location-512.png" alt="Lokasi" class="info-icon" />
+            <div class="info-text">
+              <strong>Lokasi</strong><br />
+              <small
+                >Jl. A. Yani Ruko Alva Media LT 2<br />
+                Sebrang Masjid Al-kausar, Puruk Cahu</small
+              >
+            </div>
+          </a>
+
+          <a
+            href="https://wa.me/6285190644084"
+            class="info-button"
+            target="_blank"
+          >
+            <img
+              src="asset/whatsapp-512.png"
+              alt="WhatsApp"
+              class="info-icon"
+            />
+            <span><strong>Customer Service</strong></span>
+          </a>
+        </div>
+
+        <!-- Garis -->
+        <hr class="footer-divider" />
+
+        <!-- Logo & Media Sosial -->
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <img src="Prolog.png" alt="Prolog Logo" />
+          </div>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/prolog.pic/" target="_blank"
+              ><img src="asset/instagram.png" alt="Instagram"
+            /></a>
+            <a
+              href="https://www.tiktok.com/@prolog.pic?_t=ZS-8xf0lhzbSq2&_r=1"
+              target="_blank"
+              ><img src="asset/tiktok.png" alt="TikTok"
+            /></a>
+          </div>
+        </div>
+      </footer>
     </main>
+  </body>
 
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
-
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Lazy-load below-fold carousel images (first active image stays eager for LCP) -->
-<script>
-    document.querySelectorAll('.carousel-item:not(.active) img').forEach(function (img) {
-        img.loading = 'lazy';
-        img.decoding = 'async';
-    });
-</script>
-
-
+  <!-- Lazy-load below-fold carousel images (first active image stays eager for LCP) -->
+  <script>
+    document
+      .querySelectorAll(".carousel-item:not(.active) img")
+      .forEach(function (img) {
+        img.loading = "lazy";
+        img.decoding = "async";
+      });
+  </script>
 </html>
